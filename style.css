@@ -1,3 +1,13 @@
-body{
-    padding:100px;
+body {
+  padding: 100px;
+  
+}
+
+.submit-area {
+  margin-top: 50px;
+  border-radius:15px;
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgb(95, 94, 94);
+  width: 80%;
+  margin-left:110px;
 }
