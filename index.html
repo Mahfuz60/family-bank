@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Family Bank</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div id="login-area ">
-        <h1 class="text-center">Welcome To Family Bank</h1>
-        <div class="submit-area">
-            <h4>Email Or Phone</h4>
-            <input type="text" class="form-control " placeholder="Email" ><br>
-            <h4>Password</h4>
-            <input type="password" class="form-control "placeholder="Password"><br>
-            <button class="btn btn-info w-25">Login</button>
-        </div>
-
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="login-area">
+      <h1 class="text-center">Welcome To Family Bank</h1>
+      <div class="submit-area">
+        <h4>Email Or Phone</h4>
+        <input type="text" class="form-control" placeholder="Email" /><br />
+        <h4>Password</h4>
+        <input
+          type="password"
+          class="form-control"
+          placeholder="Password"
+        /><br />
+        <button id="login_button" class="btn btn-info w-25">Login</button>
+      </div>
     </div>
 
-    
+    <div id="transaction-area">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="deposit status">
+            <h4>Deposit</h4>
+            <h2>$ <span id="currentDeposit">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="withdraw status">
+            <h4>Withdraw</h4>
+            <h2>$ <span id="withDrawBalance">00</span></h2>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="balance status">
+            <h4>Balance</h4>
+            <h2>$ <span id="currentBalance">1250</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Deposit</h4>
+        <input id="depositAmount" type="text" class="form-control" placeholder="$ amount you want to deposit"/><br/>
+            <button id="add-deposit" class="btn btn-info w-25">Deposit</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="submit-area">
+            <h4>Withdraw</h4>
+        <input type="text"class="form-control"placeholder="$ amount you want to withdraw"/><br />
+            <button class="btn btn-info w-25">Withdraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="bank.js"></script>
-</body>
+  </body>
 </html>
