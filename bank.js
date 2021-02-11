@@ -16,6 +16,22 @@ loginButton.addEventListener("click", function () {
     // const depositNumber=parseFloat(depositAmount);
     const depositNumber=getInputNumber("depositAmount");
 
+    if(depositNumber<0){
+      alert("You Negative Deposit Value is not Allow");
+    }
+    else{
+      updateSpanText("currentDeposit",depositNumber);
+      updateSpanText("currentBalance",depositNumber);
+      document.getElementById("depositAmount").value="";
+       
+
+    }
+
+        // updateSpanText("currentDeposit",depositNumber);
+        // updateSpanText("currentBalance",depositNumber);
+        // document.getElementById("depositAmount").value="";
+       
+
 
         /*const currentDeposit=document.getElementById("currentDeposit").innerText;
         const currentDepositNumber=parseFloat(currentDeposit);
@@ -30,9 +46,7 @@ loginButton.addEventListener("click", function () {
          console.log(totalBalance);*/
 
 
-        updateSpanText("currentDeposit",depositNumber);
-        updateSpanText("currentBalance",depositNumber);
-        document.getElementById("depositAmount").value="";
+        
        
 
 })
